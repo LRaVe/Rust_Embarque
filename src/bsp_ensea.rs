@@ -314,10 +314,10 @@ pub struct Board {
     pub encoder: RotaryEncoder,
     pub bargraph: Bargraph,
     pub stepper: Stepper,
+    pub gamepad: Gamepad,
     // pub gps: GPS,
     // pub gpio_outputs: GPIO_Outputs,
     // pub gpio_inputs: GPIO_Inputs,
-    // pub gamepad: Gamepad,
     // pub magnetometre: Magnetometre,
     // pub usart1: USART1,
     // pub usart2: USART2,
@@ -361,10 +361,21 @@ impl Board {
             step: Output::new(p.PA6, Level::Low, Speed::Low),
         };
         
+        // Initialize gamepad
+        let gamepad_pins = GamepadPins {
+            up: Input::new(p.PC8, Pull::Down),
+            down: Input::new(p.PB11, Pull::Down),
+            left: Input::new(p.PC6, Pull::Down),
+            right: Input::new(p.PC9, Pull::Down),
+            center: Input::new(p.PC5, Pull::Down),
+        };
+        let gamepad = Gamepad::new(gamepad_pins);
+        
         Self {
             encoder,
             bargraph,
             stepper,
+            gamepad,
         }
     }
 }

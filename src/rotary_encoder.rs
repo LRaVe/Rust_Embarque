@@ -1,9 +1,11 @@
-use core::sync::atomic::Ordering;
+use core::sync::atomic::{AtomicBool, Ordering};
 
 use crate::bsp_ensea::RotaryEncoder;
 use crate::bargraph::{BARGRAPH_LEVEL, BARGRAPH_SIGNAL};
 use crate::stepper::{STEPPER_DIRECTION, STEPPER_SPEED};
 use embassy_time::{Duration, Timer};
+
+pub static RESET_ENCODER: AtomicBool = AtomicBool::new(false);
 
 /// Structure to hold the state of the rotary encoder
 #[derive(Clone, Copy, Debug)]
@@ -54,10 +56,10 @@ pub fn set_position(encoder: &mut RotaryEncoder, position: u16) {
 /// Chaque pas d'encoder = +/- vitesse (selon la direction).
 /// Elle met à jour :
 /// - BARGRAPH_LEVEL avec la position normalisée
-/// - STEPPER_SPEED avec la vitesse accumulée (0-1000 Hz)
+/// - STEPPER_SPEED avec la vitesse accumulée (0-5000 Hz)
 /// - STEPPER_DIRECTION avec la direction du dernier mouvement
 #[embassy_executor::task]
-pub async fn encoder_task(encoder: RotaryEncoder) {
+pub async fn encoder_task(mut encoder: RotaryEncoder) {
     let mut last_position: i32 = encoder.position() as i32;
     let mut current_speed: i32 = 0;
     let speed_increment: i32 = 50;  // +/- 50 Hz par pas d'encoder
@@ -66,6 +68,19 @@ pub async fn encoder_task(encoder: RotaryEncoder) {
     
     loop {
         Timer::after(poll_interval).await;
+        
+        // Vérifier si réinitialisation demandée
+        if RESET_ENCODER.load(Ordering::Relaxed) {
+            encoder.set_position(0);  // Réinitialiser la position matérielle de l'encodeur
+            last_position = 0;
+            current_speed = 0;
+            STEPPER_SPEED.store(0, Ordering::Relaxed);
+            STEPPER_DIRECTION.store(true, Ordering::Relaxed);
+            BARGRAPH_LEVEL.store(0, Ordering::Relaxed);
+            BARGRAPH_SIGNAL.signal(());
+            RESET_ENCODER.store(false, Ordering::Relaxed);
+            defmt::println!("Emergency reset complete: encoder position reset to 0");
+        }
         
         let current_position = encoder.position() as i32;
         let delta = current_position - last_position;
@@ -95,3 +110,6 @@ pub async fn encoder_task(encoder: RotaryEncoder) {
         }
     }
 }
+
+
+

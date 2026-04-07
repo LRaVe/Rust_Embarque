@@ -8,6 +8,7 @@ use panic_probe as _;
 use rustembarque::bargraph::bargraph_task;
 use rustembarque::rotary_encoder::encoder_task;
 use rustembarque::stepper::{stepper_task, StepperController};
+use rustembarque::gamepad::button_reset_task;
 use rustembarque::bsp_ensea::Board;
 
 #[embassy_executor::main]
@@ -20,8 +21,9 @@ async fn main(spawner: embassy_executor::Spawner) {
     spawner.spawn(encoder_task(board.encoder)).unwrap();
     spawner.spawn(bargraph_task(board.bargraph)).unwrap();
     spawner.spawn(stepper_task(stepper_controller)).unwrap();
+    spawner.spawn(button_reset_task(board.gamepad)).unwrap();
     
-    defmt::println!("All tasks spawned: encoder, bargraph, and stepper");
+    defmt::println!("All tasks spawned: encoder, bargraph, stepper, gamepad reset");
     
     // Main loop (keep executor running)
     loop {
