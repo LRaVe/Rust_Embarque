@@ -1,0 +1,11 @@
+C:\Users\lrv1l\OneDrive\Documents\Work\2A\Rust\rustembarque\target\thumbv7em-none-eabihf\debug\deps\sdio_host-839892a43a248ecf.d: C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\lib.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\common_cmd.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\sd_cmd.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\emmc_cmd.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\common.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\sd.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\emmc.rs
+
+C:\Users\lrv1l\OneDrive\Documents\Work\2A\Rust\rustembarque\target\thumbv7em-none-eabihf\debug\deps\libsdio_host-839892a43a248ecf.rmeta: C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\lib.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\common_cmd.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\sd_cmd.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\emmc_cmd.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\common.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\sd.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\emmc.rs
+
+C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\lib.rs:
+C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\common_cmd.rs:
+C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\sd_cmd.rs:
+C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\emmc_cmd.rs:
+C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\common.rs:
+C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\sd.rs:
+C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sdio-host-0.9.0\src\emmc.rs:

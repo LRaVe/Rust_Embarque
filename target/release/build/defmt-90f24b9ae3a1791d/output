@@ -1,0 +1,3 @@
+cargo:rustc-link-search=C:\Users\lrv1l\OneDrive\Documents\Work\2A\Rust\rustembarque\target\release\build\defmt-90f24b9ae3a1791d\out
+cargo:rustc-check-cfg=cfg(c_variadic)
+cargo:rustc-check-cfg=cfg(no_cas)

@@ -1,0 +1,15 @@
+[target.'cfg(all(target_arch = "arm", target_os = "none"))'] 
+runner = ["probe-rs", "run", "--chip", "STM32L476RG", "--connect-under-reset"]
+
+
+[build]
+target = "thumbv7em-none-eabihf"
+rustflags = [
+    "-C", "link-arg=-Tlink.x", "-C", "link-arg=-Tdefmt.x"
+]
+
+[env]
+DEFMT_LOG = "info"
+
+[alias]
+rrb = "run --release --bin"

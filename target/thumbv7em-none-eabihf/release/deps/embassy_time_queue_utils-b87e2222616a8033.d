@@ -1,0 +1,9 @@
+C:\Users\lrv1l\OneDrive\Documents\Work\2A\Rust\rustembarque\target\thumbv7em-none-eabihf\release\deps\embassy_time_queue_utils-b87e2222616a8033.d: C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-queue-utils-0.3.0\src\lib.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-queue-utils-0.3.0\src\queue_integrated.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-queue-utils-0.3.0\src\../README.md
+
+C:\Users\lrv1l\OneDrive\Documents\Work\2A\Rust\rustembarque\target\thumbv7em-none-eabihf\release\deps\libembassy_time_queue_utils-b87e2222616a8033.rlib: C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-queue-utils-0.3.0\src\lib.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-queue-utils-0.3.0\src\queue_integrated.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-queue-utils-0.3.0\src\../README.md
+
+C:\Users\lrv1l\OneDrive\Documents\Work\2A\Rust\rustembarque\target\thumbv7em-none-eabihf\release\deps\libembassy_time_queue_utils-b87e2222616a8033.rmeta: C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-queue-utils-0.3.0\src\lib.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-queue-utils-0.3.0\src\queue_integrated.rs C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-queue-utils-0.3.0\src\../README.md
+
+C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-queue-utils-0.3.0\src\lib.rs:
+C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-queue-utils-0.3.0\src\queue_integrated.rs:
+C:\Users\lrv1l\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\embassy-time-queue-utils-0.3.0\src\../README.md:
